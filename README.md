@@ -3,7 +3,7 @@ RISHI PATWA – Developer Portfolio 🖥️
 A modern, fully responsive developer portfolio showcasing my projects, technical skills, and experience.
 Designed with an emphasis on clean UI, smooth user interactions, and optimal performance.
 
-🌐 Live Portfolio: https://rishipatwa.vercel.app/
+🌐 Live Portfolio: https://rishipatwa.me
 
 This portfolio serves as a central place to highlight:
 
