@@ -810,7 +810,6 @@ body::after {
   display: flex;
   gap: 20px;
   padding: 40px;
-  /* Keep this */
   overflow-x: auto;
   overflow-y: visible;
   scroll-snap-type: none;
@@ -819,7 +818,6 @@ body::after {
   scrollbar-width: none;
   -ms-overflow-style: none;
   margin-top: -40px;
-  /* Changed from -40px to 0 */
   scroll-behavior: auto;
 }
 
@@ -827,7 +825,7 @@ body::after {
   display: none;
 }
 
-/* PROJECT PANEL - matches original card size */
+/* PROJECT PANEL - original portrait card */
 .project-panel {
   flex: 0 0 320px;
   min-height: 550px;
@@ -843,16 +841,12 @@ body::after {
   backface-visibility: hidden;
   transform-style: preserve-3d;
   pointer-events: auto;
-
 }
 
 .project-panel:hover {
-  /* Keep only box-shadow transition */
   transition: box-shadow 0.35s ease;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
 }
-
-
 
 /* Hover effect */
 .project-panel:hover {
@@ -904,36 +898,47 @@ body::after {
   flex-grow: 1;
 }
 
-/* TECH STACK */
+/* TECH STACK - icon pills like image 1 */
 .project-panel .project-tech {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 14px;
-  max-height: 120px;
-  /* Limit height */
-  overflow: visible;
-  /* Hide overflow tags */
+  margin-bottom: 16px;
 }
 
 .project-panel .project-tech span {
-  font-size: 0.75rem;
-  padding: 6px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  padding: 5px 12px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.205);
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255,255,255,0.18);
   color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
 }
 
-/* PROJECT LINKS */
+.project-panel .project-tech span i {
+  font-size: 1rem;
+}
+
+/* PROJECT LINKS - with Github : label */
 .project-panel .project-links {
   display: flex;
   flex-direction: row;
-  /* Force horizontal layout */
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   margin-top: auto;
-  /* Push to bottom */
+  padding-top: 8px;
   flex-wrap: nowrap;
+}
+
+.project-panel .project-links .github-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(235, 245, 255, 0.85);
+  letter-spacing: 0.02em;
 }
 
 .project-panel .project-icon {
